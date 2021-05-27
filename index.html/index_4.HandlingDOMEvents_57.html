@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    #lowly-div {
+      width: 100px;
+      padding: 10px;
+      border: 1px solid black;
+      background-color: lightyellow;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div id="lowly-div" onclick="alert('You clicked the lowly div!');">
+    <p>Though I am but a lowly div, you can still click me</p>
+  </div>
+
+  <p onclick="alert('You clicked the paragraph');">
+    Paragraphs have click events also...everything does! Click me!
+  </p>
+
+  <p>The button below calls the changeBox() function in script.js:</p>
+  <button onclick="changeBox();">Change the Lowly Div!</button>
+
+  <script src="4.HandlingDOMEvents/57.ClickEvents.js"></script>
+
+</body>
+
+</html>

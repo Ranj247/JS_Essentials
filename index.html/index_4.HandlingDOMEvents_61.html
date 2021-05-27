@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      display: inline-flex;
+      width: 60px;
+      height: 60px;
+      border: 1px solid black;
+      margin: 10px;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body onkeypress="handleKeys(event);" onkeydown="handleKeys(event);" onkeyup="handleKeys(event);">
+
+  <div id="key-pressed">
+    <p>Pressed</p>
+  </div>
+  <div id="key-down">
+    <p>Down</p>
+  </div>
+  <div id="key-up">
+    <p>Up</p>
+  </div>
+  <h2>Click in the body, then start typing:</h2>
+  <h3>Current key pressed: <span id="current-key"></span></h3>
+  <h3>Last key pressed: <span id="last-key"></span></h3>
+  <p><em>Note: In the body element we are passing the event to the handleKeys() function. This allows you to use the
+      properties and methods described in the text, such as <code>event.key</code>, <code>event.repeat</code>, etc.</em>
+  </p>
+
+  <script src="4.HandlingDOMEvents/61.KeyboardEvents.js"></script>
+
+</body>
+
+</html>

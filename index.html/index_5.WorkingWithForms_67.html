@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Validating Form Data</title>
+  <link href="style.css/style_5.WorkingWithForms_67.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <form id="registration-form" action="/register/" method="POST">
+    <div class="username">
+      <label for="username">Username</label>
+      <input name="username" id="username" type="text" required>
+    </div>
+    <div class="email">
+      <label for="email">Email</label>
+      <input name="email" id="email" type="email" required>
+    </div>
+    <div class="password">
+      <label for="password">Password</label>
+      <input name="password" id="password" type="password" required>
+    </div>
+    <div class="confirm-password">
+      <label for="confirm-password">Confirm Password</label>
+      <input name="confirm-password" id="confirm-password" type="password" required>
+    </div>
+    <div class="age">
+      <label for="age">Age</label>
+      <input name="age" id="age" type="number" min="18" max="110" required>
+    </div>
+    <div class="phone">
+      <label for="phone">Phone (numbers only)</label>
+      <input name="phone" id="phone" type="text" pattern="[0-9]+" required>
+    </div>
+    <div class="join-newsletter">
+      <label for="join-newsletter">Join Newsletter</label>
+      <input name="join-newsletter" id="join-newsletter" type="checkbox" checked>
+    </div>
+    <div id="errors"></div>
+    <div class="submit">
+      <input type="submit" value="Register">
+    </div>
+  </form>
+  <script src="5.WorkingWithForms/67.ValidatingFormData.js"></script>
+</body>
+
+</html>

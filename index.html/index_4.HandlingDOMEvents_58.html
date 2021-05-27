@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    #box1,
+    #box2,
+    #box3,
+    #box4 {
+      margin: 10px;
+      width: 200px;
+      height: 200px;
+      background: lightblue;
+      border: 1px solid black;
+      padding: 10px;
+    }
+
+    #box3 {
+      overflow: scroll;
+    }
+
+    #paragraph1,
+    #paragraph2,
+    #paragraph4 {
+      background: lightyellow
+    }
+
+    #mouse-position {
+      color: green;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <h3>onmouseover:</h3>
+  <div onmouseover="handleEvent(event);" onmouseout="handleEvent(event);" id="box1">
+    <p id="paragraph1">Move the mouse over this box and watch the console. It logs to the console when you move into/out
+      of this box and its child paragraph.</p>
+  </div>
+
+  <h3>onmouseenter:</h3>
+  <div onmouseenter="handleEvent(event);" onmouseleave="handleEvent(event);" id="box2">
+    <p id="paragraph2">This box will log to the console when you enter or leave it, but not when you move over this
+      paragraph.</p>
+  </div>
+
+  <h3>onscroll:</h3>
+  <div onscroll="handleEvent(event);" id="box3">
+    <p id="paragraph3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum voluptatibus in impedit dolores
+      amet similique molestiae ut iusto veritatis ullam nobis possimus ratione, quae dolorum culpa tempora nihil?
+      Adipisci dolor similique quae. Quas provident beatae quisquam error sequi est sint architecto dolore reiciendis
+      aliquid! Dolorem repudiandae, id repellat consectetur pariatur animi recusandae laudantium. Neque rem magni dolor
+      architecto veniam officia, possimus non optio quo voluptates explicabo atque quisquam quos doloribus odio vitae
+      eligendi laudantium aliquid eum blanditiis quas numquam nihil iusto cupiditate. Corrupti magni voluptatem rem
+      recusandae amet deserunt animi repellat beatae. Provident modi a quae, laborum laboriosam enim iste?</p>
+  </div>
+
+  <h3>Mouse position: <span id='mouse-position'></span></h3>
+  <div onmousemove="handleEvent(event);" id="box4">
+    <p id="paragraph4">Whenever you're moving the mouse in this box, it'll log the mouse's (x,y) coordinates to the span
+      above..</p>
+  </div>
+
+  <script src="4.HandlingDOMEvents/58.MouseMovements&Scrolling.js"></script>
+
+</body>
+
+</html>

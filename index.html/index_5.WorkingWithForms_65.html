@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>repl.it</title>
+  <link href="style_5.WorkingWithForms_65.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1>Try submitting these forms:</h1>
+  <p>This form's submit event will be intercepted and then submitted by JavaScript. There will be some things logged to
+    the console in the process. Note: you'll need to rerun the example after submitting since it will try to POST to a
+    URL that doesn't exist.</p>
+  <form id="contact-form" method="POST" action="/contact-us/">
+    <div class="username">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username">
+    </div>
+    <div class="email">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+    </div>
+    <div class="message">
+      <label for="message">Message:</label>
+      <textarea id="message" name="message"></textarea>
+    </div>
+    <input type="submit" value="Submit" />
+  </form>
+
+  <p>This form's submit event will never be executed, since the JavaScript calls <code>event.preventDefault();</code>
+    but never calls <code>contactForm2.submit();</code>. Instead, the form's submit button now executes the JavaScript
+    code to populate the <code>response</code> div below the form.</p>
+  <form id="contact-form2" method="POST" action="/contact-us/">
+    <div class="username">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username">
+    </div>
+    <div class="email">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+    </div>
+    <div class="message">
+      <label for="message">Message:</label>
+      <textarea id="message" name="message"></textarea>
+    </div>
+    <input type="submit" value="Submit" />
+  </form>
+  <div id="response">
+    <!-- Response for the second form will go here -->
+  </div>
+  <script src="5.WorkingWithForms/65.FormSubmission.js"></script>
+</body>
+
+
+</html>

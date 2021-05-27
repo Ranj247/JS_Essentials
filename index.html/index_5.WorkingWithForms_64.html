@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="style_5.WorkingWithForms_64.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <p>The form below is prepopulated by the code in <code>script.js</code>:</p>
+  <form method="POST" action="/contact-us/">
+    <div class="username">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username">
+    </div>
+    <div class="email">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+    </div>
+    <div class="message">
+      <label for="message">Message:</label>
+      <textarea id="message" name="message"></textarea>
+    </div>
+    <input type="submit" value="Submit" />
+  </form>
+
+  <script src="5.WorkingWithForms/64.PrepopulatingFormFields.js"></script>
+</body>
+
+</html>

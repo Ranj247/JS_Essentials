@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    input {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    code {
+      background-color: #f5f5f5 !important;
+      color: red !important;
+      padding: 2px !important;
+      border-radius: 2px !important;
+    }
+  </style>
+
+</head>
+
+<body>
+  <p>Fill out and submit the form below. When you click "Login" the default action will be prevented and instead the
+    <code>handleSubmit()</code> function in <code>script.js</code> will capture the input values and log them to the
+    console.</p>
+
+  <form id="login-form" method="POST" action="/login/">
+    <div class="username">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username">
+    </div>
+    <div class="password">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password">
+    </div>
+    <input type="submit" value="Login" />
+  </form>
+
+  <script src="5.WorkingWithForms/63.GettingFormValues.js"></script>
+</body>
+
+</html>

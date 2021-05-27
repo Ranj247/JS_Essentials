@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Get vs Post</title>
+  <link href="style_5.WorkingWithForms_66.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1>Try submitting these forms:</h1>
+  <p class="warning">Important: you must pop this example out into a separate tab to see the request parameters in the
+    URL when submitting the second form!</p>
+  <p>This form is submitted via POST. You cannot see any of the form data</p>
+  <form id="contact-form" method="POST" action="">
+    <div class="username">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username">
+    </div>
+    <div class="email">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+    </div>
+    <div class="message">
+      <label for="message">Message:</label>
+      <textarea id="message" name="message"></textarea>
+    </div>
+    <input type="submit" value="Submit" />
+  </form>
+
+  <p>This form is submitted via GET. Look at the URL and you will see everything you submitted there in plaintext
+    (albeit it is URL-encoded)</p>
+  <form id="contact-form2" method="GET" action="">
+    <div class="username">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username">
+    </div>
+    <div class="email">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+    </div>
+    <div class="message">
+      <label for="message">Message:</label>
+      <textarea id="message" name="message"></textarea>
+    </div>
+    <input type="submit" value="Submit" />
+  </form>
+  
+</body>
+
+</html>
